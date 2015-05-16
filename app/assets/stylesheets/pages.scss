@@ -3,6 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.navbar {
+	background-color: #fff;
+}
+
+.name h1 {
+	color: #000;
+  font-size: 18px;
+  line-height: 100px;
+  height: 100px;
+  margin: 0;
+  text-align: right;
+}
+
 .jumbotron {
 	background: url('/assets/rainy.jpg') center center;
 	background-size: cover;
