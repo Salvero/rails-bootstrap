@@ -1,6 +1,6 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+	font-family: 'Roboto', sans-serif;
+}
 
 .name h1 {
 	color: #000;
@@ -29,10 +29,18 @@
 	margin-top: 135px;
 }
 
+.position_highlight {
+	background-color: brown;
+	color: white;
+	display: inline-block;
+	float: right;
+	padding: 5px 5px;
+}
+
 .highlight {
 	background-color: #eaeff4;
 	color: #000;
-	padding: 0 10px 0;
+	padding: 0 25px 0;
 }
 
 a.btn {
@@ -49,15 +57,8 @@ a.btn {
   width: 200px;
 }
 
-.right {
-  float: right;
-}
-
 .col-xs-8 {
 	float: left;
-}
-
-.col-xs-8 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
@@ -67,4 +68,8 @@ a.btn {
 .row {
 	margin-right: -15px;
 	margin-left: -15px;
+}
+
+.left {
+	margin-bottom: 500px;
 }
