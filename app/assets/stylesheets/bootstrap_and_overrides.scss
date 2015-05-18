@@ -1,18 +1,17 @@
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
-  color: #00567E;
 }
 
-.navbar-default .navbar-nav>.active {
-  color: red;
+header.menu li.list a {
+  color: #000;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+.header .navbar-collapse {
+  text-align: center;  
 }
 
 .navbar-default .navbar-nav .logo {
