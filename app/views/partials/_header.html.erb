@@ -4,11 +4,21 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
 <!--           <li><span class="logo"><a href="#"><%= image_tag("thumb_sa_version2.png",:size => "50x50") %></a></span></li> -->
-          <li class="list"><a href="#">Welcome</a></li>
-          <li class="list"><a href="#">Portfolio</a></li>
-          <li class="list"><a href="#">Articles</a></li>
-          <li class="list"><a href="#">About</a></li>
-          <li class="list"><a href="#">Email Me</a></li>
+          <li class="list">
+            <%= link_to "Welcome", root_path %>
+          </li>
+          <li class="list">
+            <%= link_to "Portfolio", '#' %>
+          </li>
+          <li class="list">
+            <%= link_to "Articles", root_path %>              
+          </li>
+          <li class="list">
+            <%= link_to "About", root_path %>
+          </li>
+          <li class="list">
+            <%= link_to "Email Me", root_path %>
+          </li>
       </ul>
     </div> 
   </div>
