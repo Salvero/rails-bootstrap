@@ -1,7 +1,24 @@
-$size: 18px;
-$roboto: 'Roboto', sans-serif;
+$size18: 18px;
+$size20: 20px;
+$roboto: 'Roboto', serif;
+$serif: serif;
 $center: center;
-$hover: orange;
+$hover: #000053;
+
+.port {
+	background-color: #DAECEB;
+}
+
+.port-title {
+	background-color: #5E7876;
+	color: #FFF;
+	font-family: $serif;
+}
+
+.movie-label {
+	color: #000;
+	font-family: $serif;
+}
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -13,10 +30,12 @@ $hover: orange;
 
 header.menu li.list a {
   color: #000;
-  font-size: $size;
+  font-size: $size18;
 
   &:hover {
-  	color: orange;
+  	background-color: #DBDB00;
+  	font-weight: bold;
+  	color: #FFF;
   }
 }
 

@@ -10,11 +10,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render 'partials/header' %>
+<div class="container">
+	<%= render 'partials/header' %>
 
-<%= yield %>
+	<%= yield %>
 
-<%= render 'partials/portfolio' %>
+	<%= render 'partials/portfolio' %>
 
+	<%= render 'partials/footer' %>
+
+</div>
 </body>
 </html>
