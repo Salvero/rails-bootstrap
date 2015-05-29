@@ -6,53 +6,6 @@ html {
 body {
   margin: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-[hidden],
-template {
-  display: none;
-}
-a {
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b,
-strong {
-  font-weight: bold;
-}
-dfn {
-  font-style: italic;
-}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -4202,8 +4155,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
-  height: 40px;
-  weight: 40px;
+  height: 45px;
+  weight: 45px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4241,7 +4194,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  font-size: 18px;
+  font-size: 22px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4432,15 +4385,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #d9230f;
-  background-color: transparent;
+  color: #FFF;
+  font-style: bold;
+  background-color: #A7091E;
+  height: 58px;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #d9230f;
-  background-color: transparent;
+.navbar-default .navbar-nav .email-me  > a:hover,
+.navbar-default .navbar-nav .email-me  > a:focus {
+  color: #FFF;
+  font-style: bold;
+  background-color: #d33905;
+  height: 58px;
 }
+
+.navbar-default .navbar-nav .email-me > a {
+  margin-bottom: 2px;
+}
+
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
