@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
 	def index
+		@blogs = Blog.all.order('created_at DESC')
 	end
 
 	def new
@@ -11,4 +12,13 @@ class BlogsController < ApplicationController
 
 		redirect_to @blog
 	end
+
+	def show
+		@blog = Blog.find(params[:id])
+	end
+
+	private 
+		def blog_params
+			params.require(:post).permit(:title, :body)
+		end
 end
