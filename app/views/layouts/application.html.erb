@@ -8,8 +8,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+
+<% if notice %>
+	<div id="notice_wrapper">
+		<p class="notice"><%= notice %></p>
+	</div>	
+<% elsif alert %>
+	<div id="notice_wrapper">
+		<p class="alert"><%= alert %></p>
+	</div>	
+<% end %>
 
 <div class="container">
 
@@ -22,5 +30,16 @@
 	<%= render 'partials/footer' %>
 
 </div>
+
+<script>
+	$(document).ready(function() {
+		setTimeout(function(){
+			$('#notice_wrapper').fadeOut("slow", function() {
+				$(this).remove();
+			})
+		}, 1800);
+	});
+</script>
+
 </body>
 </html>
