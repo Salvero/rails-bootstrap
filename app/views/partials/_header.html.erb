@@ -19,11 +19,14 @@
       <ul class="nav navbar-nav">
         <li><a href="#">Blog</a></li>
       </ul>
+
       <ul class="nav navbar-nav">
           <li class="email-me"><a href="#">Email Me <i class="fa fa-envelope"></i></a></li>
       </ul>
+      
       <div class="admin navbar-right">
           <%= link_to "Admin Login", new_admin_session_path %>
+          <%= link_to "Sign Out", destroy_admin_session_path %>
     </div>
     </div>
   </div>
