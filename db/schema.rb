@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 20150530214333) do
     t.string   "tag"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "user_id"
     t.integer  "admin_id"
   end
 

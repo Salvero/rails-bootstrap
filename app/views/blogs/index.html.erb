@@ -1,6 +1,21 @@
-<% @blogs.each do |blog| %>
-	<div class="post_wrapper">
-		<h2 class="title"><%= link_to blog.title, blog %></h2>
-		<p class="date"><%= blog.created_at.strftime("%B, %d, %Y") %></p>
+<div id="main_content">
+
+	<div id="header">
+		<h1>All Posts</h1>
+
+		<div class="buttons">
+			<button class="button"><%= link_to "New Post", new_blog_path %></button>
+			<button class="button">Log Out</button>
+		</div>
 	</div>
-<% end %>
+
+	<% @blogs.each do |blog| %>
+		<div class="post_wrapper">
+			<h2 class="title"><%= link_to blog.title, blog %></h2>
+			<p class="date"><%= blog.created_at.strftime("%B, %d, %Y") %></p>
+		</div>
+	<% end %>
+	
+
+
+</div>
