@@ -1,22 +1,12 @@
-<div class="page_wrapper">
-	
-	<h1>New Posts</h1>
-
+<h1>New Post</h1>
 	<%= form_for :post, url: blogs_path do |f| %>
 		<p>
-			<%= f.label :title %><br>
-			<%= f.text_field :title %><br>
+			<%= f.text_field :title, placeholder: 'Title' %><br>
 		</p>
-
 		<p>
-			<%= f.label :body %></br>
-			<%= f.text_area :body %>
-		</p>
-		
+			<%= f.text_area :body, placeholder: 'Description' %>
+		</p>	
 		<p>
 			<%= f.submit %>
 		</p>
-
-	<% end %>
-
-</div>
+	<% end %>	
